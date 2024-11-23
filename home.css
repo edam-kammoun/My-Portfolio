@@ -1,0 +1,346 @@
+.active{
+    text-decoration-color: rgb(56, 130, 209);
+}
+.ALL{
+    background-color: #081b29;
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+}
+
+
+.logo {
+    font-family: fantasy ;
+    font-size: 40px;
+    color: rgb(56, 130, 209);
+}
+
+.navbar-links ul {
+
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+.navbar-links a.active {
+    transition: 0.5s;
+    background: rgb(56, 130, 209);
+    color: white;
+    box-shadow: 1px 1px 30px rgb(56, 130, 209);
+}
+
+.navbar-links :hover{
+        transition: 0.5s;
+        background: rgb(56, 130, 209);
+        color: white;
+        box-shadow: 1px 1px 30px rgb(56, 130, 209);
+}
+
+.navbar-links li {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0 20px;
+    font-size: 25px;
+}
+
+.navbar-links a {
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    border-radius: 22px;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.navbar-links ::before{
+    position: absolute;
+    content: '';
+    top: -50%;
+    right: -5%;
+    width: 1000px;
+    height: 1000px;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.title{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 200;
+    font-size: 30px;
+
+}
+.h1{
+    color: aliceblue;
+}
+.h3{
+    color: rgb(56, 130, 209);
+}
+.img {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    
+    background: transparent;
+    transition:3s;
+    filter: drop-shadow(10px 10px 10px rgb(56, 130, 209));
+    opacity: .3;
+    scale: 1.2;
+    
+}
+.img:hover {
+    opacity: 0.9;
+}
+
+.box{
+    position: absolute;
+    margin-left: 95%;
+    margin-top:    150px;
+    display: flex;
+}
+
+
+.btn{
+    position: relative;
+    margin-top: 20%;
+    display: block;
+    justify-content: space-between;
+}   
+
+.about{
+    align-items: center;
+    width: 100px;
+    height: 50%;
+    background: rgb(56, 130, 209);
+    border: 2px solid rgb(56, 130, 209);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+.btn > .about {   
+    color: #081b29;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+.btn > .about:hover{
+    transition: 0.5s;
+    background: transparent ;
+    color: rgb(255, 253, 253);
+    box-shadow: 1px 1px 50px rgb(56, 130, 209);
+}
+.talk{
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50%;
+    background: transparent;
+    border: 2px solid rgb(56, 130, 209);
+    border-radius: 8px;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+.btn > .talk:hover{
+    transition: 0.5s;
+    background: rgb(56, 139, 223) ;
+    color: #081b29;
+    box-shadow: 1px 1px 50px rgb(56, 130, 209);
+}
+.btn > .talk {  
+    display: inline-flex; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 22px;
+}
+.icon{
+    margin-top: 20%;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.icon a::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.icon a{
+    justify-content: space-between;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid rgb(56, 130, 209);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(56, 130, 209);
+    text-decoration: none;
+
+}
+
+.icon >a:hover{
+    transition: 0.5s;
+    background: rgb(56, 130, 209);
+    color: white;
+    box-shadow: 1px 1px 30px rgb(56, 130, 209);
+}
+.menubar{
+    display: none;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+@media screen and (max-width:1400px) {
+     .box{
+        margin-left: 90%;
+     }
+ 
+    .title{
+        font-size: 25px;
+        margin-left: 20px;  
+
+    }
+    
+}
+@media screen and (max-width:1200px)  {
+    .box{
+      
+      margin-left: 90%;
+    }
+    
+    .about{
+        font-size: 15px;
+    }
+    .talk{
+        font-size: 15px;
+        margin-left: 85px;
+    }
+
+
+   .title{
+       font-size: 19px;
+       margin-left: 10px;  
+
+   }
+   
+   
+}
+
+@media (max-width: 768px) {
+    .ALL{
+        height: 1500px;
+    }
+
+    .title{
+        position: absolute;
+        margin-top: 900px;
+        font-size: 30px;
+    }
+    .box{
+        width: 500px;
+        margin-left: -10%;
+        z-index: -1;
+        background: transparent;
+
+    }
+    .icon a{
+        font-size: 25px;
+    }
+    .about{
+        font-size: 19px;
+    }
+    .talk{
+        font-size: 19px;
+        margin-left: 85px;
+    }
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        font-size: 19px;
+        display: none;
+        width:  30%;
+        height: 1%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+@media (max-width: 400px) {
+    .box{
+        max-width: 500px;
+        margin-left: -25%;
+    }
+    .img{
+
+        scale: .8;
+    }
+    .about{
+        font-size: 16px;
+    }
+    .talk{
+        font-size: 16px;
+
+        margin: auto;
+    }
+}
+
